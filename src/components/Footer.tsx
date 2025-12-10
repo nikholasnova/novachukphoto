@@ -1,5 +1,6 @@
-import { PHOTOGRAPHER_NAME } from '../constants';
+import { PHOTOGRAPHER_NAME, EMAIL_ADDRESS, INSTAGRAM_HANDLE } from '../constants';
 import logo from '../assets/white_logo_transparent_background.png'; // Using white logo for footer
+import { Instagram, Mail } from 'lucide-react'; // Import icons
 
 export default function Footer() {
   return (
@@ -13,6 +14,27 @@ export default function Footer() {
            <a href="#services" className="hover:text-white transition-colors">Services</a>
            <a href="#contact" className="hover:text-white transition-colors">Contact</a>
         </div>
+        
+        {/* Social Icons */}
+        <div className="flex space-x-6">
+          <a 
+            href={`https://www.instagram.com/${INSTAGRAM_HANDLE.substring(1)}/?hl=en`} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-stone-400 hover:text-white transition-colors"
+            aria-label="Instagram Profile"
+          >
+            <Instagram size={24} />
+          </a>
+          <a 
+            href={`mailto:${EMAIL_ADDRESS}?subject=Inquiry`} 
+            className="text-stone-400 hover:text-white transition-colors"
+            aria-label="Send an Email"
+          >
+            <Mail size={24} />
+          </a>
+        </div>
+
         <p className="text-stone-500 text-xs text-center">
            &copy; {new Date().getFullYear()} {PHOTOGRAPHER_NAME}. All rights reserved.<br/>
            Designed with care.

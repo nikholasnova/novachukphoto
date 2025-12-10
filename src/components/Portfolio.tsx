@@ -129,6 +129,8 @@ export default function Portfolio({ onGalleryStateChange }: PortfolioProps) {
                 <img 
                   src={post.thumbnail} 
                   alt={post.title} 
+                  loading="eager"
+                  decoding="sync"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
                 />
               </div>
