@@ -16,7 +16,7 @@ export default function Hero() {
           className="order-2 md:order-1 space-y-6"
         >
           <p className="text-sm uppercase tracking-widest text-text-muted">
-            Wedding & Lifestyle Photographer in {CITY_REGION} &bull; Available Nationwide
+            Orthodox Wedding Photographer in {CITY_REGION} &bull; Available Nationwide
           </p>
           <h1 className="text-4xl md:text-6xl font-serif leading-tight text-text-main">
             {TAGLINE}

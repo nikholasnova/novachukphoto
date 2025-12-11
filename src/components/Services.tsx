@@ -9,7 +9,7 @@ const services = [
   },
   {
     title: "Small Weddings",
-    description: "Intimate ceremonies in wild places.",
+    description: "Smaller weddings with only ceremonies.", // Description updated
     price: "Starting at $1,200",
     features: ["2+ Hours Coverage", "Location Scouting", "Online Gallery", "Travel included in state"]
   },
