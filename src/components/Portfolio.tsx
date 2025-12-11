@@ -4,7 +4,8 @@ import { X } from 'lucide-react';
 import GalleryEmbed from './GalleryEmbed';
 import patienceImg from '../assets/P&D 829.jpg';
 import annaImg from '../assets/J&A 367.jpg';
-import lauraTrevorImg from '../assets/Laura & Trevor.jpg'; // Changed to use Laura & Trevor.jpg
+import lauraTrevorImg from '../assets/Laura & Trevor.jpg';
+import mariannaPaulImg from '../assets/Marianna and Paul-273.jpg';
 
 // Define the type for our posts
 interface BlogPost {
@@ -20,18 +21,27 @@ interface BlogPost {
 const portfolioItems: BlogPost[] = [
   {
     id: 1,
+    embedId: "693b33b67538e1b0110a33f5",
+    slug: "-mariannapaul",
+    title: "Marianna & Paul",
+    description: "A beautiful celebration of love and faith, capturing the timeless moments of Marianna and Paul's special day.",
+    thumbnail: mariannaPaulImg,
+    textContent: ``
+  },
+  {
+    id: 2,
     embedId: "682a8a77d5a6960e243685cc",
     slug: "-patiencedimitrios",
     title: "Patience & Dimitrios",
-    description: "Orthodox weddings have a rhythm and depth I never get tired of photographing, and this one at St. Seraphim’s Cathedral in Texas was no exception.",
+    description: "Orthodox weddings have a rhythm and depth I never get tired of photographing, and this one at St. Seraphim's Cathedral in Texas was no exception.",
     thumbnail: patienceImg,
     textContent: `Patience & Dimitrios
 April 27, 2025
-Orthodox weddings have a rhythm and depth I never get tired of photographing, and this one at St. Seraphim’s Cathedral in Texas was no exception. The beauty of the space, the weight of the prayers, the quiet focus of the ceremony—it all came together in a way that felt grounded and deeply meaningful.
+Orthodox weddings have a rhythm and depth I never get tired of photographing, and this one at St. Seraphim's Cathedral in Texas was no exception. The beauty of the space, the weight of the prayers, the quiet focus of the ceremony—it all came together in a way that felt grounded and deeply meaningful.
 
 The reception at the Big White Barn in Decatur was full of warmth and celebration. The open space, the evening light, and the joy in every corner made it a perfect setting for the couple and their community to celebrate.
 
-Photographing days like this reminds me why I value this work so much. These aren’t just images—they’re pieces of memory, emotion, and connection, meant to last long after the day is over.
+Photographing days like this reminds me why I value this work so much. These aren't just images—they're pieces of memory, emotion, and connection, meant to last long after the day is over.
 Vendors
 Photographer
 NOVACHUK PHOTOGRAPHY
@@ -40,17 +50,17 @@ Venue
 THE BIG WHITE BARN`
   },
   {
-    id: 2,
+    id: 3,
     embedId: "67b24f7c4d15e91da07dd0b2",
     slug: "-johnannas",
-    title: "Anna & John Stauffer",
-    description: "Anna and John’s wedding was not just a celebration of their love but a testament to their faith—one that would serve as the foundation of their life together.",
+    title: "Anna & John",
+    description: "Anna and John's wedding was not just a celebration of their love but a testament to their faith—one that would serve as the foundation of their life together.",
     thumbnail: annaImg,
     textContent: `Anna & John Stauffer
 December 29, 2024
-Anna and John’s wedding was not just a celebration of their love but a testament to their faith—one that would serve as the foundation of their life together. In a world that moves quickly, their day was a reminder of what truly matters: love, commitment, and the sacred promise to walk side by side through all seasons of life.
+Anna and John's wedding was not just a celebration of their love but a testament to their faith—one that would serve as the foundation of their life together. In a world that moves quickly, their day was a reminder of what truly matters: love, commitment, and the sacred promise to walk side by side through all seasons of life.
 
-To Anna and John: May your journey together be as beautiful as the day you said “I do,” as strong as the faith that binds you, and as filled with love as the moments captured in these photographs.
+To Anna and John: May your journey together be as beautiful as the day you said "I do," as strong as the faith that binds you, and as filled with love as the moments captured in these photographs.
 
 Vendors
 Photographer
@@ -61,7 +71,7 @@ TRANSFIGURATION GREEK ORTHODOX CHURCH, AUSTIN TX
 View Full Gallery`
   },
   {
-    id: 3,
+    id: 4,
     embedId: "664aad73199307212031d61d",
     slug: "-lauratrevor",
     title: "Laura & Trevor",
@@ -91,7 +101,7 @@ const containerVariants = {
   show: {
     opacity: 1,
     transition: {
-      duration: 0.8,
+      duration: 0.4,
       delay: 0.2
     }
   }
@@ -128,8 +138,7 @@ export default function Portfolio({ onGalleryStateChange }: PortfolioProps) {
         <motion.div
           variants={containerVariants}
           initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.2 }}
+          animate="show"
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {portfolioItems.map((post) => (

@@ -13,13 +13,17 @@ function App() {
 
   return (
     <div className="min-h-screen bg-stone-50 selection:bg-champagne selection:text-white">
-      <Navbar isHidden={isGalleryOpen} />
-      <Hero />
-      <Portfolio onGalleryStateChange={setIsGalleryOpen} />
-      <About />
-      <Services />
-      <FAQ />
-      <Contact />
+      <header>
+        <Navbar isHidden={isGalleryOpen} />
+      </header>
+      <main>
+        <Hero />
+        <Portfolio onGalleryStateChange={setIsGalleryOpen} />
+        <About />
+        <Services />
+        <FAQ />
+        <Contact />
+      </main>
       <Footer />
     </div>
   );

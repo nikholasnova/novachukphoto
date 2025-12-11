@@ -5,13 +5,13 @@ const services = [
     title: "All Day Weddings",
     description: "Full day coverage for your big celebration.",
     price: "Starting at $3,500", // Explicitly added "Starting at"
-    features: ["8+ Hours Coverage", "Includes second photographer", "Online Gallery", "Travel included in state"]
+    features: ["8 Hours Coverage", "Includes second photographer", "Online Gallery", "Travel included in state"]
   },
   {
     title: "Small Weddings",
     description: "Smaller weddings with only ceremonies.", // Description updated
     price: "Starting at $1,200",
-    features: ["2+ Hours Coverage", "Location Scouting", "Online Gallery", "Travel included in state"]
+    features: ["2 Hours Coverage", "Location Scouting", "Online Gallery", "Travel included in state"]
   },
   {
     title: "Engagements",
@@ -28,8 +28,8 @@ export default function Services() {
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
           <h2 className="text-3xl md:text-5xl font-serif text-text-main">The Experience</h2>
           <p className="text-text-muted">
-            Investment is more than just a price tag—it’s about preserving your legacy. 
-            I offer a variety of collections to suit your unique day.
+            Investment is more than just a price tag—it's about preserving your legacy.
+            Below are some examples of package configurations and pricing. Each situation is unique, and I'll do my best to work within your budget to create something perfect for your special day.
           </p>
         </div>
 

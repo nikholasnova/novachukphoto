@@ -47,16 +47,18 @@ export default function FAQ() {
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1, duration: 0.5 }}
+              transition={{ delay: index * 0.05, duration: 0.3 }}
               className={`border rounded-sm overflow-hidden transition-all duration-300 ${
-                openIndex === index 
-                  ? 'bg-white shadow-md border-champagne/50' 
+                openIndex === index
+                  ? 'bg-white shadow-md border-champagne/50'
                   : 'bg-white border-stone-200 hover:border-champagne/30'
               }`}
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="w-full flex justify-between items-center p-6 text-left focus:outline-none"
+                aria-expanded={openIndex === index}
+                aria-controls={`faq-answer-${index}`}
               >
                 <span className={`text-lg font-serif pr-8 transition-colors duration-300 ${
                   openIndex === index ? 'text-champagne-dark' : 'text-text-main'
@@ -65,7 +67,7 @@ export default function FAQ() {
                 </span>
                 <motion.div
                   animate={{ rotate: openIndex === index ? 180 : 0 }}
-                  transition={{ duration: 0.3 }}
+                  transition={{ duration: 0.2 }}
                 >
                   <ChevronDown className={`shrink-0 transition-colors duration-300 ${
                     openIndex === index ? 'text-champagne-dark' : 'text-stone-400'
@@ -78,14 +80,15 @@ export default function FAQ() {
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.3, ease: "easeInOut" }}
+                    transition={{ duration: 0.2, ease: "easeInOut" }}
                     className="overflow-hidden"
+                    id={`faq-answer-${index}`}
                   >
                     <motion.div
                       initial={{ y: -10, opacity: 0 }}
                       animate={{ y: 0, opacity: 1 }}
                       exit={{ y: -10, opacity: 0 }}
-                      transition={{ duration: 0.3, delay: 0.1 }}
+                      transition={{ duration: 0.2, delay: 0.05 }}
                       className="p-6 pt-0 text-text-muted leading-relaxed"
                     >
                       {faq.answer}

@@ -25,11 +25,11 @@ export default function Navbar({ isHidden = false }: { isHidden?: boolean }) {
 
   return (
     <>
-      <nav className={`fixed top-0 z-[100] transition-all duration-300 ease-out ${isHidden ? '-translate-y-full opacity-0 pointer-events-none' : 'translate-y-0 opacity-100'} ${scrolled ? 'top-4 w-[95%] left-[2.5%] bg-stone-50/0 backdrop-blur-md backdrop-brightness-110 backdrop-saturate-200 shadow-[0_8px_32px_rgba(0,0,0,0.1)] border border-white/20 rounded-full py-3' : 'top-0 left-0 w-full bg-transparent border border-transparent rounded-none py-6'}`}>
-        <div className="max-w-7xl mx-auto px-6 flex items-center md:justify-between relative z-[100]">
+      <nav className={`fixed top-0 z-[100] transition-all duration-300 ease-out ${isHidden ? '-translate-y-full opacity-0 pointer-events-none' : 'translate-y-0 opacity-100'} ${scrolled ? 'top-4 w-[95%] left-[2.5%] bg-stone-50/0 backdrop-blur-md backdrop-brightness-110 backdrop-saturate-200 shadow-[0_8px_32px_rgba(0,0,0,0.1)] border border-white/20 rounded-full py-2' : 'top-0 left-0 w-full bg-transparent border border-transparent rounded-none py-2'}`}>
+        <div className="max-w-7xl mx-auto px-4 md:px-6 flex items-center md:justify-between relative z-[100] min-h-[56px]">
           <div className="flex-grow text-center md:flex-grow-0 md:text-left"> {/* Container for logo */}
             <a href="#" className="inline-block text-2xl font-serif tracking-widest uppercase text-text-main">
-              <img src={logo} alt="Novachuk Photography Logo" className="h-[60px] md:h-14 w-auto" />
+              <img src={logo} alt="Novachuk Photography Logo" className="h-[52px] md:h-[68px] w-auto" />
             </a>
           </div>
 
@@ -48,11 +48,11 @@ export default function Navbar({ isHidden = false }: { isHidden?: boolean }) {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-text-main focus:outline-none absolute right-6 top-1/2 -translate-y-1/2"
+            className="md:hidden text-text-main focus:outline-none absolute right-4 top-1/2 -translate-y-1/2"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
       </nav>

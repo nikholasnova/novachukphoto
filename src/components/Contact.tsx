@@ -82,57 +82,62 @@ export default function Contact() {
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label className="text-xs uppercase tracking-widest text-text-muted">Name</label>
-                  <input 
-                    type="text" 
+                  <label htmlFor="name" className="text-xs uppercase tracking-widest text-text-muted">Name</label>
+                  <input
+                    type="text"
+                    id="name"
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full bg-stone-100/50 border border-stone-200 p-3 focus:outline-none focus:border-champagne-dark transition-colors" 
+                    className="w-full bg-stone-100/50 border border-stone-200 p-3 focus:outline-none focus:border-champagne-dark transition-colors"
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-xs uppercase tracking-widest text-text-muted">Email</label>
-                  <input 
-                    type="email" 
+                  <label htmlFor="email" className="text-xs uppercase tracking-widest text-text-muted">Email</label>
+                  <input
+                    type="email"
+                    id="email"
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full bg-stone-100/50 border border-stone-200 p-3 focus:outline-none focus:border-champagne-dark transition-colors" 
+                    className="w-full bg-stone-100/50 border border-stone-200 p-3 focus:outline-none focus:border-champagne-dark transition-colors"
                   />
                 </div>
               </div>
-              
+
               <div className="space-y-2">
-                 <label className="text-xs uppercase tracking-widest text-text-muted">Event Date</label>
-                 <input 
-                    type="date" 
+                 <label htmlFor="date" className="text-xs uppercase tracking-widest text-text-muted">Event Date</label>
+                 <input
+                    type="date"
+                    id="date"
                     name="date"
                     value={formData.date}
                     onChange={handleChange}
-                    className="w-full bg-stone-100/50 border border-stone-200 p-3 focus:outline-none focus:border-champagne-dark transition-colors" 
+                    className="w-full bg-stone-100/50 border border-stone-200 p-3 focus:outline-none focus:border-champagne-dark transition-colors"
                  />
               </div>
 
               <div className="space-y-2">
-                 <label className="text-xs uppercase tracking-widest text-text-muted">Phone Number</label>
-                 <input 
-                    type="tel" 
+                 <label htmlFor="phone" className="text-xs uppercase tracking-widest text-text-muted">Phone Number</label>
+                 <input
+                    type="tel"
+                    id="phone"
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    className="w-full bg-stone-100/50 border border-stone-200 p-3 focus:outline-none focus:border-champagne-dark transition-colors" 
+                    className="w-full bg-stone-100/50 border border-stone-200 p-3 focus:outline-none focus:border-champagne-dark transition-colors"
                  />
               </div>
 
               <div className="space-y-2">
-                <label className="text-xs uppercase tracking-widest text-text-muted">Tell me about your day</label>
-                <textarea 
+                <label htmlFor="message" className="text-xs uppercase tracking-widest text-text-muted">Tell me about your day</label>
+                <textarea
+                  id="message"
                   name="message"
-                  rows={5} 
+                  rows={5}
                   value={formData.message}
                   onChange={handleChange}
                   required
@@ -141,7 +146,7 @@ export default function Contact() {
               </div>
 
               {formStatus === 'error' && (
-                <div className="text-red-500 text-sm text-center">
+                <div role="alert" className="text-red-500 text-sm text-center">
                   Something went wrong. Please try again or email me directly.
                 </div>
               )}
@@ -159,9 +164,16 @@ export default function Contact() {
           <div className="mt-12 pt-8 border-t border-stone-200 flex flex-col md:flex-row justify-between items-center text-text-muted text-sm gap-4">
              <a href={`mailto:${EMAIL_ADDRESS}`} className="hover:text-text-main transition-colors">{EMAIL_ADDRESS}</a>
              <span className="hidden md:inline">•</span>
-             <a href="#" className="hover:text-text-main transition-colors">{PHONE_NUMBER}</a>
+             <a href={`tel:${PHONE_NUMBER.replace(/\s/g, '')}`} className="hover:text-text-main transition-colors">{PHONE_NUMBER}</a>
              <span className="hidden md:inline">•</span>
-             <a href="#" className="hover:text-text-main transition-colors">{INSTAGRAM_HANDLE}</a>
+             <a 
+               href={`https://www.instagram.com/${INSTAGRAM_HANDLE.substring(1)}/?hl=en`} 
+               target="_blank" 
+               rel="noopener noreferrer"
+               className="hover:text-text-main transition-colors"
+             >
+               {INSTAGRAM_HANDLE}
+             </a>
           </div>
         </motion.div>
       </div>

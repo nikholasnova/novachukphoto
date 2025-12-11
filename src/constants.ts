@@ -5,5 +5,5 @@ export const TAGLINE = "Honest, timeless photography for real, unscripted love s
 export const ABOUT_TEXT = "I believe in capturing the in-between moments. The stolen glances, the tearful laughs, and the quiet pauses. My approach is rooted in documentary storytelling, observing rather than directing, ensuring your gallery feels like a true reflection of your day.";
 export const INSTAGRAM_HANDLE = "@novachukphoto";
 export const EMAIL_ADDRESS = "nikholas@novachukphoto.com";
-export const PHONE_NUMBER = "+1 520.858.2080";
+export const PHONE_NUMBER = "+1 520-858-2080";
 export const STARTING_PRICE = "$3,500";

@@ -1,6 +1,6 @@
-import { PHOTOGRAPHER_NAME, EMAIL_ADDRESS, INSTAGRAM_HANDLE } from '../constants';
+import { PHOTOGRAPHER_NAME, EMAIL_ADDRESS, INSTAGRAM_HANDLE, PHONE_NUMBER } from '../constants';
 import logo from '../assets/white_logo_transparent_background.png'; // Using white logo for footer
-import { Instagram, Mail } from 'lucide-react'; // Import icons
+import { Instagram, Mail, MessageCircle } from 'lucide-react'; // Import icons
 
 export default function Footer() {
   return (
@@ -33,6 +33,13 @@ export default function Footer() {
             aria-label="Send an Email"
           >
             <Mail size={24} />
+          </a>
+          <a 
+            href={`sms:${PHONE_NUMBER.replace(/\s/g, '').replace(/-/g, '')}`} 
+            className="text-stone-400 hover:text-white transition-colors"
+            aria-label="Send a Text Message"
+          >
+            <MessageCircle size={24} />
           </a>
         </div>
 

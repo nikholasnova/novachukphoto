@@ -24,18 +24,12 @@ export default function Hero() {
           <p className="text-text-muted text-lg max-w-md leading-relaxed">
             Capturing the raw, unfiltered beauty of your most important moments. Candid, documentary, and deeply emotional.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 pt-4">
+          <div className="pt-4">
             <a
               href="#contact"
-              className="px-8 py-3 bg-text-main text-white rounded-md hover:bg-text-muted transition-all duration-300 text-center shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+              className="inline-block px-8 py-3 bg-text-main text-white rounded-md hover:bg-text-muted transition-all duration-300 text-center shadow-lg hover:shadow-xl hover:-translate-y-0.5"
             >
               Check Availability
-            </a>
-            <a
-              href="#portfolio"
-              className="px-8 py-3 border border-text-main text-text-main rounded-md hover:bg-stone-100 transition-all duration-300 text-center"
-            >
-              View Portfolio
             </a>
           </div>
         </motion.div>
