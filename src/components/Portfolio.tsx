@@ -91,14 +91,10 @@ const containerVariants = {
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.05
+      duration: 0.8,
+      delay: 0.2
     }
   }
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.4 } }
 };
 
 interface PortfolioProps {
@@ -137,9 +133,8 @@ export default function Portfolio({ onGalleryStateChange }: PortfolioProps) {
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {portfolioItems.map((post) => (
-            <motion.div
+            <div
               key={post.id}
-              variants={itemVariants}
               onClick={() => handleOpenPost(post)}
               className="group cursor-pointer bg-stone-50 p-6 rounded-sm shadow-sm hover:shadow-lg transition-all duration-300 border border-transparent hover:border-champagne/30"
             >
@@ -147,10 +142,9 @@ export default function Portfolio({ onGalleryStateChange }: PortfolioProps) {
                 <img
                   src={post.thumbnail}
                   alt={post.title}
-                  loading="lazy"
+                  loading="eager"
                   decoding="async"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  style={{ willChange: 'auto' }}
                 />
               </div>
               <h3 className="text-xl font-serif mb-2 text-text-main group-hover:text-champagne-dark transition-colors">{post.title}</h3>
@@ -158,7 +152,7 @@ export default function Portfolio({ onGalleryStateChange }: PortfolioProps) {
               <button className="mt-4 text-xs uppercase tracking-widest border-b border-text-main pb-1 group-hover:text-champagne-dark group-hover:border-champagne-dark transition-all">
                 View Gallery
               </button>
-            </motion.div>
+            </div>
           ))}
         </motion.div>
       </div>
