@@ -6,8 +6,8 @@ import charityMatthewImg from '../assets/Charity and Matthew.jpg'; // Third hero
 
 export default function Hero() {
   return (
-    <section id="hero" className="min-h-screen flex items-center pt-20 md:pt-32 pb-10 px-6 md:px-12 max-w-7xl mx-auto overflow-hidden">
-      <div className="grid md:grid-cols-2 gap-12 items-center w-full">
+    <section id="hero" className="min-h-screen flex items-center pt-28 md:pt-32 pb-10 px-6 md:px-12 max-w-7xl mx-auto overflow-hidden">
+      <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center w-full">
         {/* Text Content */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -15,7 +15,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="order-2 md:order-1 space-y-6"
         >
-          <p className="text-sm uppercase tracking-widest text-text-muted">
+          <p className="hidden md:block text-sm uppercase tracking-widest text-text-muted">
             Orthodox Wedding Photographer in {CITY_REGION} &bull; Available Nationwide
           </p>
           <h1 className="text-4xl md:text-6xl font-serif leading-tight text-text-main">
@@ -58,8 +58,11 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="order-1 md:order-none md:hidden mt-8"
+            className="order-1 md:order-none md:hidden"
         >
+            <p className="text-sm uppercase tracking-widest text-text-muted text-center mb-6">
+              Orthodox Wedding Photographer in {CITY_REGION} &bull; Available Nationwide
+            </p>
             <div className="w-full h-96 bg-stone-200 overflow-hidden rounded-sm shadow-lg">
                 <img src={mariannaPaulMainImg} alt="Couple laughing" className="w-full h-full object-cover" />
             </div>
