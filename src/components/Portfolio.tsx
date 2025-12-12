@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
 import GalleryEmbed from './GalleryEmbed';
 import patienceImg from '../assets/P&D 829.jpg';
+import oliviaAndAndrewImg from '../assets/Olivia and Andrew.jpg';
 import annaImg from '../assets/J&A 367.jpg';
 import lauraTrevorImg from '../assets/Laura & Trevor.jpg';
 import mariannaPaulImg from '../assets/Marianna and Paul-273.jpg';
@@ -20,11 +21,20 @@ interface BlogPost {
 
 const portfolioItems: BlogPost[] = [
   {
+    id: 5,
+    embedId: "693b4d22f21f0bde566a3d26",
+    slug: "-oliviaandandrew",
+    title: "Olivia & Andrew",
+    description: "A beautiful Greek Orthodox wedding at St Katherine's Greek Orthodox Church, full of joy, tradition, and the warmth of family and faith.",
+    thumbnail: oliviaAndAndrewImg,
+    textContent: ``
+  },
+  {
     id: 1,
     embedId: "693b33b67538e1b0110a33f5",
     slug: "-mariannapaul",
     title: "Marianna & Paul",
-    description: "A beautiful celebration of love and faith, capturing the timeless moments of Marianna and Paul's special day.",
+    description: "A beautiful Russian Orthodox wedding at Holy Ascension Russian Orthodox Church in Sacramento, California. A day filled with grace, tradition, and timeless beauty.",
     thumbnail: mariannaPaulImg,
     textContent: ``
   },

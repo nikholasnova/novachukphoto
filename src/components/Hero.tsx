@@ -24,7 +24,7 @@ export default function Hero() {
           <p className="text-text-muted text-lg max-w-md leading-relaxed">
             Capturing the raw, unfiltered beauty of your most important moments. Candid, documentary, and deeply emotional.
           </p>
-          <div className="pt-4">
+          <div className="pt-4 text-center md:text-left">
             <a
               href="#contact"
               className="inline-block px-8 py-3 bg-text-main text-white rounded-md hover:bg-text-muted transition-all duration-300 text-center shadow-lg hover:shadow-xl hover:-translate-y-0.5"
