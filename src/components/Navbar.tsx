@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import logo from '../assets/logo_transparent_background.png'; // Assuming logo is here
 
 const navLinks = [
+  { name: 'Home', href: '#hero' },
   { name: 'About', href: '#about' },
   { name: 'Portfolio', href: '#portfolio' },
   { name: 'Services', href: '#services' },
