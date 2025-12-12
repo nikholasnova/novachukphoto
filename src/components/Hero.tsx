@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { CITY_REGION, TAGLINE } from '../constants';
 import mariannaPaulMainImg from '../assets/Marianna and Paul.jpg'; // Main new hero image
 import mariannaPaulSecondImg from '../assets/Marianna and Paul 120.jpg'; // Second new hero image
-import mariannaPaulThirdImg from '../assets/Marianna and Paul-121.jpg'; // Third new hero image
+import charityMatthewImg from '../assets/Charity and Matthew.jpg'; // Third hero image
 
 export default function Hero() {
   return (
@@ -43,13 +43,13 @@ export default function Hero() {
         >
            {/* Placeholder Layout - mimicking a collage */}
            <div className="absolute top-0 right-10 w-64 h-80 bg-stone-200 overflow-hidden rounded-sm shadow-lg z-10">
-             <img src={mariannaPaulMainImg} alt="Couple laughing" className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700" />
+             <img src={mariannaPaulMainImg} alt="Couple laughing" className="w-full h-full object-cover transition-all duration-700" />
            </div>
            <div className="absolute bottom-10 left-20 w-60 h-72 bg-stone-200 overflow-hidden rounded-sm shadow-lg z-20">
-             <img src={mariannaPaulSecondImg} alt="Wedding detail" className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700" />
+             <img src={mariannaPaulSecondImg} alt="Wedding detail" className="w-full h-full object-cover transition-all duration-700" />
            </div>
            <div className="absolute top-12 -left-8 w-48 h-64 bg-stone-200 overflow-hidden rounded-sm shadow-lg z-30 opacity-100">
-             <img src={mariannaPaulThirdImg} alt="Walking together" className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700" />
+             <img src={charityMatthewImg} alt="Walking together" className="w-full h-full object-cover transition-all duration-700" />
            </div>
         </motion.div>
 

@@ -194,7 +194,7 @@ export default function Portfolio({ onGalleryStateChange }: PortfolioProps) {
             </button>
 
             {/* Scrollable Container */}
-            <div className="w-full h-full max-w-6xl overflow-y-auto bg-white shadow-2xl rounded-sm custom-scrollbar">
+            <div className="w-full h-full max-w-6xl overflow-y-auto bg-white shadow-2xl rounded-sm">
                <div className="p-4 md:p-12 min-h-full">
                   <div className="max-w-4xl mx-auto">
                     {/* Header inside Modal */}
