@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:images": "node scripts/generate-responsive-images.js",
     "lint": "eslint .",
     "preview": "vite preview",
     "add-gallery": "node scripts/add-gallery.js",

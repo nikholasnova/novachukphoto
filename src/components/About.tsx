@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
-import { ABOUT_TEXT, PHOTOGRAPHER_NAME } from '../constants';
-import photographerImg from '../assets/Novachuk Photographer.jpg';
+import { PHOTOGRAPHER_NAME } from '../constants';
+import ResponsiveImage from './ResponsiveImage';
+import { aboutImages } from '../assets/images';
 
 export default function About() {
   return (
@@ -22,12 +23,11 @@ export default function About() {
               Orthodox Wedding Photographer | Authentic, Candid & Effortless.
             </h3>
             <div className="text-text-muted leading-relaxed space-y-4">
-              <p>{ABOUT_TEXT}</p>
               <p>
-                Originally from California, I moved to Arizona with my parents in 2010. Their Russian roots, paired with a community of Greek friends, developed my multilingual background in English, Russian, and Greek. Having grown up in the church, I understand the sacred beauty of the Divine Liturgy, the Crowning ceremony, and the traditions that make Orthodox weddings so unique.
+                I believe in capturing the in-between moments—the stolen glances, tearful laughs, and quiet pauses. The best photos are felt, not just seen. I'd love to hear your story and create something beautiful together.
               </p>
               <p>
-                 We all live incredibly special lives, and I find it amazing to capture and share the real, pure feelings in those moments. As I believe, the best photos are felt, not just seen. I'd love to hear your story and create something beautiful together!
+                Originally from California, I moved to Arizona with my parents in 2010. Their Russian roots, paired with a community of Greek friends, developed my multilingual background in English, Russian, and Greek. Having grown up in the church, I understand the sacred beauty of the Divine Liturgy, the Crowning ceremony, and the traditions that make Orthodox weddings so unique.
               </p>
             </div>
           </div>
@@ -37,10 +37,12 @@ export default function About() {
             <div className="relative">
               <div className="absolute inset-0 border-2 border-champagne translate-x-4 translate-y-4 rounded-sm" />
               <div className="relative aspect-square w-full bg-stone-200 overflow-hidden rounded-sm shadow-md">
-                <img 
-                  src={photographerImg} 
-                  alt="Nikholas Novachuk - Arizona Orthodox Wedding Photographer" 
-                  className="w-full h-full object-cover grayscale-[10%]" 
+                <ResponsiveImage
+                  sources={aboutImages.photographer}
+                  alt="Nikholas Novachuk - Arizona Orthodox Wedding Photographer"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  loading="lazy"
+                  className="w-full h-full object-cover grayscale-[10%]"
                 />
               </div>
             </div>
