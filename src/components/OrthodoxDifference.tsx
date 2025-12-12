@@ -43,7 +43,7 @@ export default function OrthodoxDifference() {
               </p>
               <p>
                 I've spent my life in Orthodox churches. I know the rhythm of the
-                Liturgy, when the priest will turn, the weight of the moment when
+                service, when the priest will turn, the weight of the moment when
                 the crowns are exchanged. I don't just photograph the Mystery, I
                 understand it.
               </p>
