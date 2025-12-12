@@ -6,7 +6,7 @@ import charityMatthewImg from '../assets/Charity and Matthew.jpg'; // Third hero
 
 export default function Hero() {
   return (
-    <section id="hero" className="min-h-screen flex items-center pt-32 pb-10 px-6 md:px-12 max-w-7xl mx-auto overflow-hidden">
+    <section id="hero" className="min-h-screen flex items-center pt-20 md:pt-32 pb-10 px-6 md:px-12 max-w-7xl mx-auto overflow-hidden">
       <div className="grid md:grid-cols-2 gap-12 items-center w-full">
         {/* Text Content */}
         <motion.div
