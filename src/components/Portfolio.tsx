@@ -2,19 +2,11 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
 import GalleryEmbed from './GalleryEmbed';
-import ResponsiveImage from './ResponsiveImage';
-import { portfolioImages } from '../assets/images';
-
-// Image source type for responsive images
-interface ImageSource {
-  src: string;
-  w: number;
-}
-
-interface ImageSources {
-  webp?: ImageSource[];
-  fallback: ImageSource[];
-}
+import patienceImg from '../assets/P&D 829.jpg';
+import oliviaAndAndrewImg from '../assets/Olivia and Andrew.jpg';
+import annaImg from '../assets/J&A 367.jpg';
+import lauraTrevorImg from '../assets/Laura & Trevor.jpg';
+import mariannaPaulImg from '../assets/Marianna and Paul-273.jpg';
 
 // Define the type for our posts
 interface BlogPost {
@@ -23,7 +15,7 @@ interface BlogPost {
   slug: string;    // The url part (e.g., -patiencedimitrios)
   title: string;
   description: string;
-  thumbnail: ImageSources;
+  thumbnail: string;
   textContent: string; // The full text content for the embed
 }
 
@@ -34,7 +26,7 @@ const portfolioItems: BlogPost[] = [
     slug: "-oliviaandandrew",
     title: "Olivia & Andrew",
     description: "A beautiful Greek Orthodox wedding at St Katherine's Greek Orthodox Church, full of joy, tradition, and the warmth of family and faith.",
-    thumbnail: portfolioImages.olivia,
+    thumbnail: oliviaAndAndrewImg,
     textContent: ``
   },
   {
@@ -43,7 +35,7 @@ const portfolioItems: BlogPost[] = [
     slug: "-mariannapaul",
     title: "Marianna & Paul",
     description: "A beautiful Russian Orthodox wedding at Holy Ascension Russian Orthodox Church in Sacramento, California. A day filled with grace, tradition, and timeless beauty.",
-    thumbnail: portfolioImages.mariannaPaul273,
+    thumbnail: mariannaPaulImg,
     textContent: ``
   },
   {
@@ -52,7 +44,7 @@ const portfolioItems: BlogPost[] = [
     slug: "-patiencedimitrios",
     title: "Patience & Dimitrios",
     description: "Orthodox weddings have a rhythm and depth I never get tired of photographing, and this one at St. Seraphim's Cathedral in Texas was no exception.",
-    thumbnail: portfolioImages.patience,
+    thumbnail: patienceImg,
     textContent: `Patience & Dimitrios
 April 27, 2025
 Orthodox weddings have a rhythm and depth I never get tired of photographing, and this one at St. Seraphim's Cathedral in Texas was no exception. The beauty of the space, the weight of the prayers, the quiet focus of the ceremony—it all came together in a way that felt grounded and deeply meaningful.
@@ -73,7 +65,7 @@ THE BIG WHITE BARN`
     slug: "-johnannas",
     title: "Anna & John",
     description: "Anna and John's wedding was not just a celebration of their love but a testament to their faith—one that would serve as the foundation of their life together.",
-    thumbnail: portfolioImages.anna,
+    thumbnail: annaImg,
     textContent: `Anna & John Stauffer
 December 29, 2024
 Anna and John's wedding was not just a celebration of their love but a testament to their faith—one that would serve as the foundation of their life together. In a world that moves quickly, their day was a reminder of what truly matters: love, commitment, and the sacred promise to walk side by side through all seasons of life.
@@ -94,7 +86,7 @@ View Full Gallery`
     slug: "-lauratrevor",
     title: "Laura & Trevor",
     description: "A special intimate wedding in Sedona, Arizona. The ceremony at Briar Patch Inn and magical sunset photos at Bell Rock captured the love and joy between the couple.",
-    thumbnail: portfolioImages.lauraTrevor,
+    thumbnail: lauraTrevorImg,
     textContent: `Laura & Trevor
 Wedding
 Briar Patch Inn
@@ -166,11 +158,11 @@ export default function Portfolio({ onGalleryStateChange }: PortfolioProps) {
               className="group cursor-pointer bg-stone-50 p-6 rounded-sm shadow-sm hover:shadow-lg transition-all duration-300 border border-transparent hover:border-champagne/30"
             >
               <div className="aspect-[4/3] w-full overflow-hidden mb-4 rounded-sm bg-stone-200">
-                <ResponsiveImage
-                  sources={post.thumbnail}
+                <img
+                  src={post.thumbnail}
                   alt={post.title}
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  loading="lazy"
+                  loading="eager"
+                  decoding="async"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>

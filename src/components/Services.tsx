@@ -28,7 +28,9 @@ export default function Services() {
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
           <h2 className="text-3xl md:text-5xl font-serif text-text-main">The Experience</h2>
           <p className="text-text-muted">
-            I specialize in Orthodox weddings, capturing every sacred moment with care. Packages below are examples—I'm happy to customize to fit your needs and budget.
+            Specializing in Orthodox weddings, I understand the importance of capturing every sacred moment of the service without interruption. 
+            Investment is more than just a price tag—it's about preserving your legacy.
+            Below are some examples of package configurations and pricing. Each situation is unique, and I'll do my best to work within your budget to create something perfect for your special day.
           </p>
         </div>
 

@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 import { CITY_REGION, TAGLINE } from '../constants';
-import ResponsiveImage from './ResponsiveImage';
-import { heroImages } from '../assets/images';
+import mariannaPaulMainImg from '../assets/Marianna and Paul.jpg'; // Main new hero image
+import mariannaPaulSecondImg from '../assets/Marianna and Paul 120.jpg'; // Second new hero image
+import charityMatthewImg from '../assets/Charity and Matthew.jpg'; // Third hero image
 
 export default function Hero() {
   return (
@@ -26,7 +27,7 @@ export default function Hero() {
           <div className="pt-4 text-center md:text-left">
             <a
               href="#contact"
-              className="inline-block px-8 py-3 bg-black text-white rounded-md hover:bg-stone-800 transition-all duration-300 text-center shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+              className="inline-block px-8 py-3 bg-text-main text-white rounded-md hover:bg-text-muted transition-all duration-300 text-center shadow-lg hover:shadow-xl hover:-translate-y-0.5"
             >
               Check Availability
             </a>
@@ -42,33 +43,13 @@ export default function Hero() {
         >
            {/* Placeholder Layout - mimicking a collage */}
            <div className="absolute top-0 right-10 w-64 h-80 bg-stone-200 overflow-hidden rounded-sm shadow-lg z-10">
-             <ResponsiveImage
-               sources={heroImages.mariannaPaulMain}
-               alt="Couple laughing"
-               sizes="(max-width: 768px) 100vw, 256px"
-               className="w-full h-full object-cover transition-all duration-700"
-               loading="eager"
-               fetchPriority="high"
-             />
+             <img src={mariannaPaulMainImg} alt="Couple laughing" className="w-full h-full object-cover transition-all duration-700" />
            </div>
            <div className="absolute bottom-10 left-20 w-60 h-72 bg-stone-200 overflow-hidden rounded-sm shadow-lg z-20">
-             <ResponsiveImage
-               sources={heroImages.mariannaPaulSecond}
-               alt="Wedding detail"
-               sizes="(max-width: 768px) 100vw, 240px"
-               className="w-full h-full object-cover transition-all duration-700"
-               loading="eager"
-               fetchPriority="high"
-             />
+             <img src={mariannaPaulSecondImg} alt="Wedding detail" className="w-full h-full object-cover transition-all duration-700" />
            </div>
            <div className="absolute top-12 -left-8 w-48 h-64 bg-stone-200 overflow-hidden rounded-sm shadow-lg z-30 opacity-100">
-             <ResponsiveImage
-               sources={heroImages.charityMatthew}
-               alt="Walking together"
-               sizes="(max-width: 768px) 100vw, 192px"
-               className="w-full h-full object-cover transition-all duration-700"
-               loading="eager"
-             />
+             <img src={charityMatthewImg} alt="Walking together" className="w-full h-full object-cover transition-all duration-700" />
            </div>
         </motion.div>
 
@@ -83,14 +64,7 @@ export default function Hero() {
               Orthodox Wedding Photographer in {CITY_REGION} &bull; Available Nationwide
             </p>
             <div className="w-full h-96 bg-stone-200 overflow-hidden rounded-sm shadow-lg">
-                <ResponsiveImage
-                  sources={heroImages.mariannaPaulMain}
-                  alt="Couple laughing"
-                  sizes="100vw"
-                  className="w-full h-full object-cover"
-                  loading="eager"
-                  fetchPriority="high"
-                />
+                <img src={mariannaPaulMainImg} alt="Couple laughing" className="w-full h-full object-cover" />
             </div>
         </motion.div>
       </div>
