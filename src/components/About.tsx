@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ABOUT_TEXT, PHOTOGRAPHER_NAME } from '../constants';
+import { PHOTOGRAPHER_NAME } from '../constants';
 import photographerImg from '../assets/Novachuk Photographer.jpg';
 
 export default function About() {
@@ -22,12 +22,11 @@ export default function About() {
               Orthodox Wedding Photographer | Authentic, Candid & Effortless.
             </h3>
             <div className="text-text-muted leading-relaxed space-y-4">
-              <p>{ABOUT_TEXT}</p>
               <p>
-                Originally from California, I moved to Arizona with my parents in 2010. Their Russian roots, paired with a community of Greek friends, developed my multilingual background in English, Russian, and Greek. Having grown up in the church, I understand the sacred beauty of the Divine Liturgy, the Crowning ceremony, and the traditions that make Orthodox weddings so unique.
+                I believe in capturing the in-between moments—the stolen glances, tearful laughs, and quiet pauses. We all live incredibly special lives, and I find it amazing to capture and share the real, pure feelings in those moments. The best photos are felt, not just seen. I'd love to hear your story and create something beautiful together!
               </p>
               <p>
-                 We all live incredibly special lives, and I find it amazing to capture and share the real, pure feelings in those moments. As I believe, the best photos are felt, not just seen. I'd love to hear your story and create something beautiful together!
+                Originally from California, I moved to Arizona with my parents in 2010. Their Russian roots, paired with a community of Greek friends, developed my multilingual background in English, Russian, and Greek. Having grown up in the church, I understand the sacred beauty of the Divine Liturgy, the Crowning ceremony, and the traditions that make Orthodox weddings so unique.
               </p>
             </div>
           </div>

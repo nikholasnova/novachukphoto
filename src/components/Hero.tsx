@@ -27,7 +27,7 @@ export default function Hero() {
           <div className="pt-4 text-center md:text-left">
             <a
               href="#contact"
-              className="inline-block px-8 py-3 bg-text-main text-white rounded-md hover:bg-text-muted transition-all duration-300 text-center shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+              className="inline-block px-8 py-3 bg-black text-white rounded-md hover:bg-stone-800 transition-all duration-300 text-center shadow-lg hover:shadow-xl hover:-translate-y-0.5"
             >
               Check Availability
             </a>
