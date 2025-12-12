@@ -28,6 +28,7 @@ export default function Services() {
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
           <h2 className="text-3xl md:text-5xl font-serif text-text-main">The Experience</h2>
           <p className="text-text-muted">
+            Specializing in Orthodox weddings, I understand the importance of capturing every sacred moment of the service without interruption. 
             Investment is more than just a price tag—it's about preserving your legacy.
             Below are some examples of package configurations and pricing. Each situation is unique, and I'll do my best to work within your budget to create something perfect for your special day.
           </p>
@@ -45,7 +46,11 @@ export default function Services() {
               className="bg-stone-50 p-8 rounded-sm shadow-sm hover:shadow-lg transition-shadow duration-300 border border-transparent hover:border-champagne/30 block cursor-pointer"
             >
               <h3 className="text-2xl font-serif mb-3 text-text-main">{service.title}</h3>
-              <p className="text-text-muted mb-6 text-sm">{service.description}</p>
+              <p className="text-text-muted mb-6 text-sm">
+                {service.title === "All Day Weddings" 
+                  ? "Full day coverage including getting ready, the Crowning ceremony, and reception." 
+                  : service.description}
+              </p>
               <div className="text-lg font-medium text-champagne-dark mb-6">{service.price}</div>
               <ul className="space-y-3">
                 {service.features.map((feature, i) => (

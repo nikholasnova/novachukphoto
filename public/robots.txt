@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://novachukphoto.com/sitemap.xml

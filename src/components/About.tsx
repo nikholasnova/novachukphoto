@@ -19,12 +19,15 @@ export default function About() {
               About {PHOTOGRAPHER_NAME}
             </h2>
             <h3 className="text-xl text-champagne-dark font-serif italic">
-              Authentic, candid & effortless storytelling.
+              Orthodox Wedding Photographer | Authentic, Candid & Effortless.
             </h3>
             <div className="text-text-muted leading-relaxed space-y-4">
               <p>{ABOUT_TEXT}</p>
               <p>
-                Originally from California, I moved to Arizona with my parents in 2010. Their Russian roots, paired with a community of Greek friends, developed my multilingual background in English, Russian, and Greek. We all live incredibly special lives, and I find it amazing to capture and share the real, pure feelings in those moments. As I believe, the best photos are felt, not just seen. I'd love to hear your story and create something beautiful together!
+                Originally from California, I moved to Arizona with my parents in 2010. Their Russian roots, paired with a community of Greek friends, developed my multilingual background in English, Russian, and Greek. Having grown up in the church, I understand the sacred beauty of the Divine Liturgy, the Crowning ceremony, and the traditions that make Orthodox weddings so unique.
+              </p>
+              <p>
+                 We all live incredibly special lives, and I find it amazing to capture and share the real, pure feelings in those moments. As I believe, the best photos are felt, not just seen. I'd love to hear your story and create something beautiful together!
               </p>
             </div>
           </div>
@@ -36,7 +39,7 @@ export default function About() {
               <div className="relative aspect-square w-full bg-stone-200 overflow-hidden rounded-sm shadow-md">
                 <img 
                   src={photographerImg} 
-                  alt="Photographer Portrait" 
+                  alt="Nikholas Novachuk - Arizona Orthodox Wedding Photographer" 
                   className="w-full h-full object-cover grayscale-[10%]" 
                 />
               </div>
