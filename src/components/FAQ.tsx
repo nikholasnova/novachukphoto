@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     question: "Do you have experience with Orthodox wedding ceremonies?",
-    answer: "Yes, I specialize in Orthodox weddings (Greek, Russian, Coptic, and more). I understand the sacred nature of the Divine Liturgy, the Crowning ceremony, and the Dance of Isaiah. My approach respects the sanctity of the altar and the traditions, ensuring I capture the important moments without being intrusive."
+    answer: "I've grown up around Orthodox weddings my whole life, from Greek to Russian to OCA and more, so I understand the service thoroughly. The Betrothal, the prayers during the Crowning, the Dance of Isaiah, it's all second nature to me. I know when to step forward and when to hang back, always respecting the sanctity of the Mystery while capturing every meaningful moment."
   },
   {
     question: "How many photos will we receive?",

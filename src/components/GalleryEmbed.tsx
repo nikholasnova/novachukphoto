@@ -23,7 +23,7 @@ export default function GalleryEmbed({ id, slug, textContent }: GalleryEmbedProp
     // 3. Create and append the script
     const script = document.createElement('script');
     script.id = scriptId;
-    script.src = `https://www.novachukphoto.gallery/${slug}/slideswebcomponentembed.js/${id}?features=lightbox,pinterest&filtertags=`;
+    script.src = `https://www.novachukphoto.gallery/${slug}/slideswebcomponentembed.js/${id}?features=lightbox&filtertags=`;
     script.type = 'text/javascript';
     script.setAttribute('data-pt-scriptslideshowid', id);
     script.async = true;
