@@ -12,6 +12,10 @@ const faqs = [
     answer: "Absolutely! I love exploring new places. While I'm based in Arizona, I'm available for weddings nationwide and worldwide. Travel fees are custom quoted based on location."
   },
   {
+    question: "Do you have experience with Orthodox wedding ceremonies?",
+    answer: "Yes, I specialize in Orthodox weddings (Greek, Russian, Coptic, and more). I understand the sacred nature of the Divine Liturgy, the Crowning ceremony, and the Dance of Isaiah. My approach respects the sanctity of the altar and the traditions, ensuring I capture the important moments without being intrusive."
+  },
+  {
     question: "How many photos will we receive?",
     answer: "For a full 8-hour wedding day, you can expect between 600-800 fully edited, high-resolution images. I believe in quality over quantity, but I never cap the number of good photos I deliver."
   },
