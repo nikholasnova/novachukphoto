@@ -23,10 +23,10 @@ export default function About() {
             </h3>
             <div className="text-text-muted leading-relaxed space-y-4">
               <p>
-                I believe in capturing the in-between moments—the stolen glances, tearful laughs, and quiet pauses. We all live incredibly special lives, and I find it amazing to capture and share the real, pure feelings in those moments. The best photos are felt, not just seen. I'd love to hear your story and create something beautiful together!
+                Originally from California, I moved to Arizona with my parents in 2010. Their Russian roots, paired with a community of Greek friends, developed my multilingual background in English, Russian, and Greek.
               </p>
               <p>
-                Originally from California, I moved to Arizona with my parents in 2010. Their Russian roots, paired with a community of Greek friends, developed my multilingual background in English, Russian, and Greek. Having grown up in the church, I understand the sacred beauty of the Divine Liturgy, the Crowning ceremony, and the traditions that make Orthodox weddings so unique.
+                Having grown up in the church, Orthodox weddings have always been a part of my life. There's something special about capturing a day that carries so much meaning, not just for the couple, but for their families and their faith. I'd love to hear your story and be part of yours.
               </p>
             </div>
           </div>

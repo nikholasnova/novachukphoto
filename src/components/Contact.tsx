@@ -9,6 +9,7 @@ export default function Contact() {
     email: '',
     phone: '',
     date: '',
+    parish: '',
     message: ''
   });
 
@@ -35,7 +36,7 @@ export default function Contact() {
 
       if (response.ok) {
         setFormStatus('success');
-        setFormData({ name: '', email: '', phone: '', date: '', message: '' });
+        setFormData({ name: '', email: '', phone: '', date: '', parish: '', message: '' });
       } else {
         setFormStatus('error');
       }
@@ -107,16 +108,30 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="space-y-2">
-                 <label htmlFor="date" className="text-xs uppercase tracking-widest text-text-muted">Event Date</label>
-                 <input
-                    type="date"
-                    id="date"
-                    name="date"
-                    value={formData.date}
-                    onChange={handleChange}
-                    className="w-full bg-stone-100/50 border border-stone-200 p-3 focus:outline-none focus:border-champagne-dark transition-colors"
-                 />
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-2">
+                   <label htmlFor="date" className="text-xs uppercase tracking-widest text-text-muted">Event Date</label>
+                   <input
+                      type="date"
+                      id="date"
+                      name="date"
+                      value={formData.date}
+                      onChange={handleChange}
+                      className="w-full bg-stone-100/50 border border-stone-200 p-3 focus:outline-none focus:border-champagne-dark transition-colors"
+                   />
+                </div>
+                <div className="space-y-2">
+                   <label htmlFor="parish" className="text-xs uppercase tracking-widest text-text-muted">Parish / Church</label>
+                   <input
+                      type="text"
+                      id="parish"
+                      name="parish"
+                      placeholder="e.g. St. Katherine's Greek Orthodox"
+                      value={formData.parish}
+                      onChange={handleChange}
+                      className="w-full bg-stone-100/50 border border-stone-200 p-3 focus:outline-none focus:border-champagne-dark transition-colors placeholder:text-stone-400"
+                   />
+                </div>
               </div>
 
               <div className="space-y-2">

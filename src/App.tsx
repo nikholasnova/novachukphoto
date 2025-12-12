@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
+import OrthodoxDifference from './components/OrthodoxDifference';
 import Services from './components/Services';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
@@ -20,6 +21,7 @@ function App() {
       <main>
         <Hero />
         <Portfolio onGalleryStateChange={setIsGalleryOpen} />
+        <OrthodoxDifference />
         <About />
         <Services />
         <FAQ />

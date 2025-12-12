@@ -4,10 +4,6 @@ import { ChevronDown } from 'lucide-react';
 
 const faqs = [
   {
-    question: "Why should I choose you to be my photographer?",
-    answer: "Every wedding photographer out there has their own unique style and way of running their business. Over the years, I have learned how I like to shoot and edit my photos in a way that I feel is very real and true to life. Instead of posing, I prefer to direct in a way that is natural and effortless, because that is when the camera melts away and the true emotions come out. I want you to look at these pictures years down the line and remember the joy and sweetness from the day you married, and not hours of being posed around. I don’t want your day to be centered around the photos but rather the photos be the byproduct of your day. If you have looked at my work and liked what you saw, and all of the above resonates with you, then we might be the perfect fit! "
-  },
-  {
     question: "Do you travel for weddings?",
     answer: "Absolutely! I love exploring new places. While I'm based in Arizona, I'm available for weddings nationwide and worldwide. Travel fees are custom quoted based on location."
   },
