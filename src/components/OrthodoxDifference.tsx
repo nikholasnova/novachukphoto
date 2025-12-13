@@ -36,7 +36,7 @@ export default function OrthodoxDifference() {
 
             <div className="space-y-4 text-text-muted leading-relaxed">
               <p>
-                Your special day shouldn't be centered around the photos, I photograph in a way that the photos are a by-product of the joy and love shared on your special day. From the Crowning to the Dance of Isaish to the partaking of Holy Communion, I aim to capture the raw tears and smiles shared as well as the quiet reverence of the Holy Mystery.
+                Your special day shouldn't be centered around the photos, I photograph in a way that the photos are a by-product of the joy and love shared on your special day. From the Crowning to the Dance of Isaiah to the partaking of Holy Communion, I aim to capture the raw tears and smiles shared as well as the reverence of the Holy Mystery.
               </p>
               <p>
                 As an Orthodox Christian myself, I have learned the rhythm of the wedding service. I follow the Priest's lead and capture the weight of the moment.
